@@ -16,7 +16,7 @@ module Ex.Ex7 where
 --Main> flatten (List [])
 --[]
 
-import Ex.NestedList
+import NestedList
 
 flatten :: NestedList a -> [a]
 flatten (Elem e) = [e]
