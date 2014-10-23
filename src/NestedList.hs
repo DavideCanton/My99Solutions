@@ -1,4 +1,4 @@
-module Ex.NestedList where
+module NestedList where
 
 data NestedList a = Elem a | List [NestedList a] deriving Eq
 

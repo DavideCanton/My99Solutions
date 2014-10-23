@@ -1,4 +1,4 @@
-module Ex.Ex8 where
+module Ex8 where
 
 --(**) Eliminate consecutive duplicates of list elements.
 --

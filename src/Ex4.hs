@@ -1,4 +1,4 @@
-module Ex.Ex4 where
+module Ex4 where
 
 --(*) Find the number of elements of a list.
 --

@@ -1,4 +1,4 @@
-module Ex.Ex2 where
+module Ex2 where
 
 --(*) Find the last but one element of a list.
 --

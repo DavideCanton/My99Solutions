@@ -1,4 +1,4 @@
-module Ex.Ex5 where
+module Ex5 where
 
 --(*) Reverse a list.
 --

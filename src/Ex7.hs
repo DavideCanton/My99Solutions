@@ -1,4 +1,4 @@
-module Ex.Ex7 where
+module Ex7 where
 
 --(**) Flatten a nested list structure.
 --
