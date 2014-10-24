@@ -1,4 +1,9 @@
 module Main where
 
+import Ex11
+
 main :: IO ()
-main = putStrLn "99 Problems!"
+main = do
+    let l = "aaaabccaadeeee"
+    print l
+    print $ encodeModified l

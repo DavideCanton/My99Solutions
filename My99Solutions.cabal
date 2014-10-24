@@ -8,5 +8,16 @@ executable My99Solutions
   hs-source-dirs:  src
   main-is:         Main.hs
   build-depends:   base >= 4
-  ghc-options:     -fcase-merge -fdo-eta-reduction -fdo-lambda-eta-expansion -fexcess-precision -ffoldr-build-on
+  ghc-options:     -fcase-merge -fdo-eta-reduction -fdo-lambda-eta-expansion -fexcess-precision
+  other-modules:   
+                   Ex11,
+                   Encoded
+
+library 
+  build-depends:   base >= 4
+  ghc-options:     -Wall
+  hs-source-dirs:  src
+  other-modules:   
+                   Ex11,
+                   Encoded
 
