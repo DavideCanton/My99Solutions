@@ -11,7 +11,11 @@ executable My99Solutions
   ghc-options:     -fcase-merge -fdo-eta-reduction -fdo-lambda-eta-expansion -fexcess-precision
   other-modules:   
                    Ex11,
-                   Encoded
+                   Encoded,
+                   Ex12,
+                   Ex13,
+                   Ex14,
+                   Ex15
 
 library 
   build-depends:   base >= 4
@@ -19,5 +23,9 @@ library
   hs-source-dirs:  src
   other-modules:   
                    Ex11,
-                   Encoded
+                   Encoded,
+                   Ex12,
+                   Ex13,
+                   Ex14,
+                   Ex15
 
