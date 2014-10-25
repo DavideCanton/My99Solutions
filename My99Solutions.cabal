@@ -20,7 +20,9 @@ executable My99Solutions
                    Ex17,
                    Ex18,
                    Ex19,
-                   Ex20
+                   Ex20,
+                   Ex21,
+                   Ex22
 
 library 
   build-depends:   base >= 4
@@ -37,5 +39,7 @@ library
                    Ex17,
                    Ex18,
                    Ex19,
-                   Ex20
+                   Ex20,
+                   Ex21,
+                   Ex22
 
