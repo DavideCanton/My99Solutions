@@ -7,7 +7,9 @@ author:         Davide
 executable My99Solutions
   hs-source-dirs:  src
   main-is:         Main.hs
-  build-depends:   base >= 4
+  build-depends:   
+                   base >= 4,
+                   random >=1.0.1 && <1.1
   ghc-options:     -fcase-merge -fdo-eta-reduction -fdo-lambda-eta-expansion -fexcess-precision
   other-modules:   
                    Ex11,
@@ -22,10 +24,15 @@ executable My99Solutions
                    Ex19,
                    Ex20,
                    Ex21,
-                   Ex22
+                   Ex22,
+                   Ex23,
+                   Ex24,
+                   Ex25
 
 library 
-  build-depends:   base >= 4
+  build-depends:   
+                   base >= 4,
+                   random >=1.0.1 && <1.1
   ghc-options:     -Wall
   hs-source-dirs:  src
   other-modules:   
@@ -41,5 +48,8 @@ library
                    Ex19,
                    Ex20,
                    Ex21,
-                   Ex22
+                   Ex22,
+                   Ex23,
+                   Ex24,
+                   Ex25
 
