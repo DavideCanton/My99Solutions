@@ -9,5 +9,5 @@ module Ex24 where
 
 import Ex23
 
-diffSelect :: Int -> Int -> IO [Int]
-diffSelect n m = rndSelect [1..m] n
+diffSelect :: Integral a => a -> a -> IO [a]
+diffSelect n m = rndSelect [1..m] (fromIntegral n)
