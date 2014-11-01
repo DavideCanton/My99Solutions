@@ -7,7 +7,7 @@ module Ex35 where
 -- primeFactors 315
 --[3, 3, 5, 7]
 
-primeFactors :: Int -> [Int]
+primeFactors :: Integral a => a -> [a]
 primeFactors k = primeFactorsH k 2
     where primeFactorsH n m
             | n < m          = []

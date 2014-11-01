@@ -7,7 +7,7 @@ module Ex32 where
 --[myGCD 36 63, myGCD (-3) (-6), myGCD (-3) 6]
 --[9,3,3]
 
-myGCD :: Int -> Int -> Int
+myGCD :: Integral a => a -> a -> a
 myGCD n1 n2 = myGCD' (abs n1) (abs n2)
     where myGCD' a 0 = a
           myGCD' a b = myGCD' b (a `mod` b)

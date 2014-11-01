@@ -11,7 +11,15 @@ module Ex34 where
 -- totient 10
 --4
 
+import           Data.List
+import           Data.Ratio
 import           Ex33
+import           Ex35
 
-totient :: Int -> Int
-totient n = length [ x | x <- [1..n-1], coprime n x ]
+totient :: Integral a => a -> a
+totient n = genericLength [ x | x <- [1..n-1], coprime n x ]
+
+
+totient' :: Integral a => a -> a
+totient' n = n * numerator r `div` denominator r
+    where r = foldl' (*) 1 [ 1 - 1 % p | p <- nub $ primeFactors n ]

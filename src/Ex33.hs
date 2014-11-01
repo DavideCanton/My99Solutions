@@ -8,5 +8,5 @@ module Ex33 where
 --True
 
 
-coprime :: Int -> Int -> Bool
+coprime :: Integral a => a -> a -> Bool
 coprime a b = gcd a b == 1
