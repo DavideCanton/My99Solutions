@@ -30,7 +30,12 @@ executable My99Solutions
                    Ex25,
                    Ex26,
                    Ex27,
-                   Ex28
+                   Ex28,
+                   Ex31,
+                   Ex32,
+                   Ex33,
+                   Ex34,
+                   Ex35
 
 library 
   build-depends:   
@@ -57,5 +62,10 @@ library
                    Ex25,
                    Ex26,
                    Ex27,
-                   Ex28
+                   Ex28,
+                   Ex31,
+                   Ex32,
+                   Ex33,
+                   Ex34,
+                   Ex35
 
