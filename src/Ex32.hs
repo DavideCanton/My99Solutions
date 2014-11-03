@@ -1,3 +1,5 @@
+{-# LANGUAGE BangPatterns #-}
+
 module Ex32 where
 
 --(**) Determine the greatest common divisor of two positive integer numbers. Use Euclid's algorithm.
@@ -9,5 +11,5 @@ module Ex32 where
 
 myGCD :: Integral a => a -> a -> a
 myGCD n1 n2 = myGCD' (abs n1) (abs n2)
-    where myGCD' a 0 = a
-          myGCD' a b = myGCD' b (a `mod` b)
+    where myGCD' !a 0  = a
+          myGCD' !a !b = myGCD' b (a `mod` b)

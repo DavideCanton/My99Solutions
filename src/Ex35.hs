@@ -11,5 +11,5 @@ primeFactors :: Integral a => a -> [a]
 primeFactors k = primeFactorsH k 2
     where primeFactorsH n m
             | n < m          = []
-            | n `mod` m == 0 = m:primeFactorsH (n `div` m) m
+            | n `mod` m == 0 = m : primeFactorsH (n `div` m) m
             | otherwise      = primeFactorsH n (if m == 2 then 3 else m + 2)

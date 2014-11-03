@@ -35,7 +35,12 @@ executable My99Solutions
                    Ex32,
                    Ex33,
                    Ex34,
-                   Ex35
+                   Ex35,
+                   Ex36,
+                   Ex37,
+                   Ex39,
+                   Ex40,
+                   Ex41
 
 library 
   build-depends:   
@@ -67,5 +72,10 @@ library
                    Ex32,
                    Ex33,
                    Ex34,
-                   Ex35
+                   Ex35,
+                   Ex36,
+                   Ex37,
+                   Ex39,
+                   Ex40,
+                   Ex41
 
