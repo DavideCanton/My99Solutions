@@ -12,6 +12,7 @@ module Ex50 where
 -- [('a',"0"),('b',"101"),('c',"100"),('d',"111"),('e',"1101"),('f',"1100")]
 
 import           Control.Arrow
+import			 Control.Monad
 import           Data.List
 import qualified Data.Map      as M
 import           Data.Maybe
@@ -38,5 +39,5 @@ makeFreqTuples :: String -> [FreqTuple]
 makeFreqTuples s = M.toAscList (createMap s)
     where createMap = foldl' (\m c -> M.insertWith (+) c 1 m) M.empty
 
-encodeHuffman :: HRes -> String -> String
-encodeHuffman ht = concatMap (\c -> fromJust . lookup c $ ht)
+encodeHuffman :: HRes -> String -> Maybe String
+encodeHuffman ht s = liftM concat $ mapM (`lookup` ht) s
